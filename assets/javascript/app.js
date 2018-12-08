@@ -160,7 +160,9 @@ $(document).ready(function(){
       // EVENT LISTNERS -  will hide time remaining to answer quote until the start button is clicked and the options are presented.  Once the start button is clicked the start function is executed.  Once an option button is clicked optionReview function will take action.  Event listners need to be executed after the functions and their parts are defined.
 
       $("#remainingTime").hide();
+      console.log("test");
       $("#startButton").on('click', triviaGame.start);
+      console.log("test");
       $(document).on('click' , '.option', triviaGame.optionReview);
       
     })
